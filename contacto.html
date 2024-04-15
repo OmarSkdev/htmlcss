@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header>
+    <nav>
+        <img src="./assets/images/logo2.png" alt="" width="78" height="82">
+        <ul class="menu-screen">
+            <li><a href="./inicio.html">Inicio</a></li>
+            <li><a href="./about.html">Nosotros</a></li>
+            <li><a href="./cursos.html">Cursos</a></li>
+            <li><a href="./testimonios.html">Testimonios</a></li>
+            <li><a href="./preguntas.html">Preguntas</a></li>
+            <li><a href="./efecto_css.html">Efecto CSS</a></li>
+            <li><a href="./contacto.html" class="selected">Contacto</a></li>
+        </ul>
+        <img class="menu-mobile" src="./assets/images/menu_icon.png" width="36" height="21" alt="">
+    </nav>
     <section class="seccionForm">
         <div class="contactForm">
             <div class="containerForm">
@@ -28,10 +42,28 @@
                         <label for="">Deja tu mensaje...</label>
                         <textarea name="" cols="30" rows="5" placeholder="Mensaje..."></textarea>
                     </div>
+                    <input type="submit" value="Enviar Mensaje">
                 </form>
+            </div>
+            <div class="info">
+                <div class="imgBox">
+                    <img src="./assets/images/new-messages.svg" alt="">
+                </div>
+                <div class="txtBox">
+                    <div class="infoContact">
+                        <ion-icon name="map"></ion-icon><p>Dirección, País</p>
+                    </div>
+                    <div class="infoContact">
+                        <ion-icon name="call"></ion-icon><p>000-00000000</p>
+                    </div>
+                    <div class="infoContact">
+                        <ion-icon name="mail"></ion-icon><p>contacto@email.com</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    </header>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
 </body>
