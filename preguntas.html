@@ -2,114 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Preguntas</title>          
-            
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header>
-        <nav>
-            <img src="./assets/images/logo2.png" alt="" width="78" height="82">
-            <ul class="menu-screen">
-                <li><a href="./inicio.html">Inicio</a></li>
-                <li><a href="./about.html">Nosotros</a></li>
-                <li><a href="./cursos.html">Cursos</a></li>
-                <li><a href="./testimonios.html">Testimonios</a></li>
-                <li><a href="./preguntas.html" class="selected">Preguntas</a></li>
-                <li><a href="#">Efecto CSS &#x25BE;</a>
-                    <ul class="dropdown">
-                        <li><a href="./efecto_css.html">Flip Card</a></li>
-                        <li><a href="./efecto2_css.html">Border Animation</a></li>
-                        <li><a href="./efecto3_css.html">Text Animation</a></li>
-                    </ul>
-                </li>    
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            <img class="menu-mobile" src="./assets/images/menu_icon.png" width="36" height="21" alt="">
+        <h2 class="logo">Logo</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+
+        <nav class="menu">
+            <a href="./inicio.html">Inicio</a>
+            <a href="./somos.html">Nosotros</a>
+            <a href="./cursos.html">Cursos</a>
+            <a href="./testimonios.html">Testimonios</a>
+            <a href="./preguntas.html" id="selected">Preguntas</a>
+            <a href="./efecto_css.html">Efecto Css</a>
+            <a href="./efecto2_css.html">Efecto2</a>         
+            <a href="./efecto3_css.html">Efecto3</a>          
+
+            <a href="./contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
         </nav>
-
-        <section class="questions container">
-            <h1 class="subtitle-questions">Preguntas frecuentes</h1>
-            <img src="./assets/images/question.png" alt="" height="300">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto pariatur, magni expedita ut eius.</p>
-            
-            <section class="questions-container">
-                <article class="questions-padding">
-                    <div class="questions-answer">
-                        <h3 class="questions-title">¿Qué es CSS?
-                            <span class="questions-arrow">
-                                <img src="./assets/images/arrow.svg" class="questions-img">
-                            </span>
-                        </h3>
-                        <p class="questions-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at dolorum ab impedit expedita, praesentium perspiciatis eveniet modi corrupti fuga?</p>
-                    </div>
-                </article>
-
-                <article class="questions-padding">
-                    <div class="questions-answer">
-                        <h3 class="questions-title">¿Qué aprenderé en el Curso?
-                            <span class="questions-arrow">
-                                <img src="./assets/images/arrow.svg" class="questions-img">
-                            </span>
-                        </h3>
-                        <p class="questions-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at dolorum ab impedit expedita, praesentium perspiciatis eveniet modi corrupti fuga?</p>
-                    </div>
-                </article>
-                <article class="questions-padding">
-                    <div class="questions-answer">
-                        <h3 class="questions-title">¿Qué es CSS GRID?
-                            <span class="questions-arrow">
-                                <img src="./assets/images/arrow.svg" class="questions-img">
-                            </span>
-                        </h3>
-                        <p class="questions-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at dolorum ab impedit expedita, praesentium perspiciatis eveniet modi corrupti fuga?</p>
-                    </div>
-                </article>
-            </section>
-        </section>
-    <!--     <footer class="footer">
-        <section class="footer-container container">
-            <nav class="nav nav--footer">
-                <h2 class="footer-title">Curso CSS</h2>
-                <ul class="nav-link nav-link--footer">
-                    <li class="nav-items">
-                        <a href="#" class="nav-links">Inicio</a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="#" class="nav-links">Acerca de</a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="#" class="nav-links">Cursos</a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="#" class="nav-links">Testimonios</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <form class="footer-form">
-                <h2 class="footer-newsletter">Suscríbete a Newsletter</h2>
-                <div class="footer-inputs">
-                    <input type="email" placeholder="Email:" class="footer-input">
-                    <input type="submit" value="Registrate" class="footer-submit">
-                </div>
-            </form>
-        </section>
-        <section class="footer-copy container">
-            <div class="footer-social">
-                <a href="#" class="footer-icons"><img src="./assets/images/facebook.svg" class="footer-img"></a>
-                <a href="#" class="footer-icons"><img src="./assets/images/twitter.svg" class="footer-img"></a>
-                <a href="#" class="footer-icons"><img src="./assets/images/youtube.svg" class="footer-img"></a>
-            </div>
-
-            <h3 class="footer-copyright">Derechos reservados &copy; Equipo</h3>
-        </section>
-        </footer> -->
     </header>
-    <script src="./js/questions.js"></script>
-    
-</body>
+    <main id="preguntas">
+    <section class="questions container">
+        <h1 class="subtitle-questions">Preguntas frecuentes</h1>
+        <img src="./assets/images/question.png" alt="" height="300">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto pariatur, magni expedita ut eius.</p>
+        
+        <section class="questions-container">
+            <article class="questions-padding">
+                <div class="questions-answer">
+                    <h3 class="questions-title">¿Qué es CSS?
+                        <span class="questions-arrow">
+                            <img src="./assets/images/arrow.svg" class="questions-img">
+                        </span>
+                    </h3>
+                    <p class="questions-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at dolorum ab impedit expedita, praesentium perspiciatis eveniet modi corrupti fuga?</p>
+                </div>
+            </article>
 
+            <article class="questions-padding">
+                <div class="questions-answer">
+                    <h3 class="questions-title">¿Qué aprenderé en el Curso?
+                        <span class="questions-arrow">
+                            <img src="./assets/images/arrow.svg" class="questions-img">
+                        </span>
+                    </h3>
+                    <p class="questions-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at dolorum ab impedit expedita, praesentium perspiciatis eveniet modi corrupti fuga?</p>
+                </div>
+            </article>
+            <article class="questions-padding">
+                <div class="questions-answer">
+                    <h3 class="questions-title">¿Qué es CSS GRID?
+                        <span class="questions-arrow">
+                            <img src="./assets/images/arrow.svg" class="questions-img">
+                        </span>
+                    </h3>
+                    <p class="questions-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at dolorum ab impedit expedita, praesentium perspiciatis eveniet modi corrupti fuga?</p>
+                </div>
+            </article>
+        </section>
+    </section>
+    </main>
+    <script src="./js/questions.js"></script>
+</body>
+</html>

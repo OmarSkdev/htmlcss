@@ -3,74 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Testimonios</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <header>
-        <nav>
-            <img src="./assets/images/logo2.png" alt="" width="78" height="82">
-            <ul class="menu-screen">
-                <li><a href="./inicio.html">Inicio</a></li>
-                <li><a href="./about.html">Nosotros</a></li>
-                <li><a href="./cursos.html">Cursos</a></li>
-                <li><a href="./testimonios.html" class="selected">Testimonios</a></li>
-                <li><a href="./preguntas.html">Preguntas</a></li>
-                <li><a href="#">Efecto CSS &#x25BE;</a>
-                    <ul class="dropdown">
-                        <li><a href="./efecto_css.html">Flip Card</a></li>
-                        <li><a href="./efecto2_css.html">Border Animation</a></li>
-                        <li><a href="./efecto3_css.html">Text Animation</a></li>
-                    </ul>
-                </li>    
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            <img class="menu-mobile" src="./assets/images/menu_icon.png" width="36" height="21" alt="">
+        <h2 class="logo">Logo</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+
+        <nav class="menu">
+            <a href="./inicio.html">Inicio</a>
+            <a href="./somos.html">Nosotros</a>
+            <a href="./cursos.html">Cursos</a>
+            <a href="./testimonios.html" id="selected">Testimonios</a>
+            <a href="./preguntas.html">Preguntas</a>
+            <a href="./efecto_css.html">Efecto Css</a>
+            <a href="./efecto2_css.html">Efecto2</a>            
+            <a href="./efecto3_css.html">Efecto3</a>          
+
+            <a href="./contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
         </nav>
-        <section class="testimony">
-            <div class="testimony-container">
-                <img src="./assets/images/leftarrow.svg" class="testimony-arrow" id="before">
-                <section class="testimony-body testimony-body--show" data-id="1">
-                    <div class="testimony-texts">
-                        <h2 class="subtitle">Mi nombre es Usuario1,
-                        <span class="testimony-course">estudiante de CSS</span>
-                        </h2>
-                        <p class="testimony-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum dolorum quos esse quasi quod non.</p>
-                    </div>
-                    <figure class="testimony-picture">
-                        <img src="./assets/images/face.jpg" class="testimony-img">
-                    </figure>
-                </section>
-                <section class="testimony-body" data-id="2">
-                    <div class="testimony-texts">
-                        <h2 class="subtitle">Mi nombre es Usuario2,
-                        <span class="testimony-course">estudiante de HTML</span>
-                        </h2>
-                        <p class="testimony-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum dolorum quos esse quasi quod non.</p>
-                    </div>
-                    <figure class="testimony-picture">
-                        <img src="./assets/images/face2.jpg" class="testimony-img">
-                    </figure>
-                </section>
-                <section class="testimony-body" data-id="3">
-                    <div class="testimony-texts">
-                        <h2 class="subtitle">Mi nombre es Usuario3,
-                        <span class="testimony-course">estudiante de JAVASCRIPT</span>
-                        </h2>
-                        <p class="testimony-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum dolorum quos esse quasi quod non.</p>
-                    </div>
-                    <figure class="testimony-picture">
-                        <img src="./assets/images/face3.jpg" class="testimony-img">
-                    </figure>
-                </section>
-                <img src="./assets/images/rightarrow.svg" class="testimony-arrow" id="next">
+    </header>
+    <div id="testimonios">
+    <section class="testimony">
+        <div class="testimony-container">
+            <img src="./assets/images/leftarrow.svg" class="testimony-arrow" id="before">
+            <section class="testimony-body testimony-body--show" data-id="1">
+                <div class="testimony-texts">
+                    <h2 class="subtitle">Mi nombre es Usuario1,
+                    <span class="testimony-course">estudiante de CSS</span>
+                    </h2>
+                    <p class="testimony-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum dolorum quos esse quasi quod non.</p>
+                </div>
+                <figure class="testimony-picture">
+                    <img src="./assets/images/face.jpg" class="testimony-img">
+                </figure>
+            </section>
+            <section class="testimony-body" data-id="2">
+                <div class="testimony-texts">
+                    <h2 class="subtitle">Mi nombre es Usuario2,
+                    <span class="testimony-course">estudiante de HTML</span>
+                    </h2>
+                    <p class="testimony-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum dolorum quos esse quasi quod non.</p>
+                </div>
+                <figure class="testimony-picture">
+                    <img src="./assets/images/face2.jpg" class="testimony-img">
+                </figure>
+            </section>
+            <section class="testimony-body" data-id="3">
+                <div class="testimony-texts">
+                    <h2 class="subtitle">Mi nombre es Usuario3,
+                    <span class="testimony-course">estudiante de JAVASCRIPT</span>
+                    </h2>
+                    <p class="testimony-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum dolorum quos esse quasi quod non.</p>
+                </div>
+                <figure class="testimony-picture">
+                    <img src="./assets/images/face3.jpg" class="testimony-img">
+                </figure>
+            </section>
+            <img src="./assets/images/rightarrow.svg" class="testimony-arrow" id="next">
 
-            </div>
+        </div>
 
-        </section>
-        <footer></footer>
-        </header>  
-        <script src="./js/slider.js"></script>
+    </section>
+    </div>
+    <script src="./js/slider.js"></script>
+
 </body>
 </html>

@@ -2,49 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>          
-            
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header>
-    <nav>
-        <img src="./assets/images/logo2.png" alt="" width="78" height="82">
-        <ul class="menu-screen" id="menuList">
-            <li><a href="./inicio.html" class="selected">Inicio</a></li>
-            <li><a href="./about.html">Nosotros</a></li>
-            <li><a href="./cursos.html">Cursos</a></li>
-            <li><a href="./testimonios.html">Testimonios</a></li>
-            <li><a href="./preguntas.html">Preguntas</a></li>
-            <li><a href="#">Efecto CSS &#x25BE;</a>
-                <ul class="dropdown">
-                    <li><a href="./efecto_css.html">Flip Card</a></li>
-                    <li><a href="./efecto2_css.html">Border Animation</a></li>
-                    <li><a href="./efecto3_css.html">Text Animation</a></li>
-                </ul>
-            </li>            
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-        <img class="menu-mobile" src="./assets/images/menu_icon.png" onclick="toggleMenu()" width="36" height="21" alt="">
-    </nav>
-    <div class="header-content">
-        <div class="header-content-text">
-            <h3 class="header-subtitle">Aprende en Línea</h3>
-            <h1 class="header-title">HTML5 y CSS3</h1>
-            <p class="header-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, repellendus earum ratione nobis illum perspiciatis mollitia voluptate tempora eligendi inventore ullam perferendis obcaecati.</p>
-            <div class="header-content-btns">
-                <a href="./cursos.html" class="btn">Leer Más</a>
-                <a href="" class="btn" id="btnUnete">Únete</a>
-            </div>
-        </div>
-        <img class="header-img" src="./assets/images/pngegg.png" onclick="toggleMenu()" width="500" height="500" />
-    </div>
-    </header>  
-    <script src="./js/onClick.js"></script> 
-    <script src="./js/menu.js"></script> 
+        <h2 class="logo">Logo</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
 
+        <nav class="menu">
+            <a href="./inicio.html" id="selected">Inicio</a>
+            <a href="./somos.html">Nosotros</a>
+            <a href="./cursos.html">Cursos</a>
+            <a href="./testimonios.html">Testimonios</a>
+            <a href="./preguntas.html">Preguntas</a>
+            <a href="./efecto_css.html">Efecto Css</a>
+            <a href="./efecto2_css.html">Efecto2</a>
+            <a href="./efecto3_css.html">Efecto3</a>           
+            
+            <a href="./contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section id="inicio">
+        <div>
+            <img src="./assets/images/pngegg.png" alt="" width="250" height="250">
+            <h4>Titulo 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.                
+            </p>
+            <a href="" class="btn-saber-mas">Saber más</a>
+        </div>
+        <div>
+            <img src="./assets/images/pngegg.png" alt="" width="250" height="250">
+            <h4>Titulo 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.                
+            </p>
+            <a href="" class="btn-saber-mas">Únete</a>
+        </div>
+    </section>
+    
+    
 </body>
 </html>

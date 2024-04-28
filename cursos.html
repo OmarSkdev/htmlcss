@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Cursos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <header>
-        <nav>
-            <img src="./assets/images/logo2.png" alt="" width="78" height="82">
-            <ul class="menu-screen">
-                <li><a href="./inicio.html" ">Inicio</a></li>
-                <li><a href="./about.html">Nosotros</a></li>
-                <li><a href="./cursos.html" class="selected">Cursos</a></li>
-                <li><a href="./testimonios.html">Testimonios</a></li>
-                <li><a href="./preguntas.html">Preguntas</a></li>
-                <li><a href="#">Efecto CSS &#x25BE;</a>
-                    <ul class="dropdown">
-                        <li><a href="./efecto_css.html">Flip Card</a></li>
-                        <li><a href="./efecto2_css.html">Border Animation</a></li>
-                        <li><a href="./efecto3_css.html">Text Animation</a></li>
-                    </ul>
-                </li>    
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            <img class="menu-mobile" src="./assets/images/menu_icon.png" width="36" height="21" alt="">
+        <h2 class="logo">Logo</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+
+        <nav class="menu">
+            <a href="./inicio.html">Inicio</a>
+            <a href="./somos.html">Nosotros</a>
+            <a href="./cursos.html" id="selected">Cursos</a>
+            <a href="./testimonios.html">Testimonios</a>
+            <a href="./preguntas.html">Preguntas</a>
+            <a href="./efecto_css.html">Efecto Css</a>
+            <a href="./efecto2_css.html">Efecto2</a>            
+            <a href="./efecto3_css.html">Efecto3</a>          
+
+            <a href="./contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
         </nav>
-        <section class="section">
+    </header>
+    <section id="cursos">
+    <section class="section">
             <details>
                 <summary>Curso de HTML</summary>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, temporibus facere itaque recusandae consectetur debitis.</p>
@@ -40,8 +45,8 @@
             <details>
                 <summary>Curso de JAVASCRIPT</summary>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, temporibus facere itaque recusandae consectetur debitis.</p>
-            </details>
-        </section>
-    </header>    
+            </details>           
+    </section>
+    </section>
 </body>
 </html>

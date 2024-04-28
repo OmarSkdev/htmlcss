@@ -4,74 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-    <nav>
-        <img src="./assets/images/logo2.png" alt="" width="78" height="82">
-        <ul class="menu-screen">
-            <li><a href="./inicio.html">Inicio</a></li>
-            <li><a href="./about.html">Nosotros</a></li>
-            <li><a href="./cursos.html">Cursos</a></li>
-            <li><a href="./testimonios.html">Testimonios</a></li>
-            <li><a href="./preguntas.html">Preguntas</a></li>
-            <li><a href="#">Efecto CSS &#x25BE;</a>
-                <ul class="dropdown">
-                    <li><a href="./efecto_css.html">Flip Card</a></li>
-                    <li><a href="./efecto2_css.html">Border Animation</a></li>
-                    <li><a href="./efecto3_css.html">Text Animation</a></li>
+        <h2 class="logo">Logo</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
 
-                </ul>
-            </li>     
-            <li><a href="./contacto.html" class="selected">Contacto</a></li>
-        </ul>
-        <img class="menu-mobile" src="./assets/images/menu_icon.png" width="36" height="21" alt="">
-    </nav>
-    <section class="seccionForm">
-        <div class="contactForm">
-            <div class="containerForm">
-                <div class="textoForm">
-                    <h2>Contacto</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eaque minus sunt adipisci provident iste vel ratione placeat facilis unde.</p>
-                </div>
-
-                <form action="">
-                    <div class="inputBox">
-                        <label for="">Nombre:</label>
-                        <input type="text" placeholder="Nombre...">
-                    </div>
-                    <div class="inputBox">
-                        <label for="">Email:</label>
-                        <input type="email" placeholder="Email...">
-                    </div>
-                    <div class="inputBox">
-                        <label for="">Deja tu mensaje...</label>
-                        <textarea name="" cols="30" rows="5" placeholder="Mensaje..."></textarea>
-                    </div>
-                    <input type="submit" value="Enviar Mensaje">
-                </form>
-            </div>
-            <div class="info">
-                <div class="imgBox">
-                    <img src="./assets/images/new-messages.svg" alt="">
-                </div>
-                <div class="txtBox">
-                    <div class="infoContact">
-                        <ion-icon name="map"></ion-icon><p>Dirección, País</p>
-                    </div>
-                    <div class="infoContact">
-                        <ion-icon name="call"></ion-icon><p>000-00000000</p>
-                    </div>
-                    <div class="infoContact">
-                        <ion-icon name="mail"></ion-icon><p>contacto@email.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <nav class="menu">
+            <ul>
+                <a href="./inicio.html" id="selected">Inicio</a>
+                <a href="./somos.html">Nosotros</a>
+                <a href="./cursos.html">Cursos</a>
+                <a href="./testimonios.html">Testimonios</a>
+                <a href="./preguntas.html">Preguntas</a>
+                <a href="./efecto_css.html" >Efecto Css</a>
+                <a href="./efecto2_css.html">Efecto2</a>   
+                <a href="./efecto3_css.html">Efecto3</a>      
+                <a href="./contacto.html" id="selected">Contacto</a>
+            
+            </ul>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
     </header>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+    <main id="contacto">
+        <section class="seccionForm">
+            <div class="contactForm">
+                <div class="containerForm">
+                    <div class="textoForm">
+                        <h2>Contacto</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eaque minus sunt adipisci provident iste vel ratione placeat facilis unde.</p>
+                    </div>
+    
+                    <form action="">
+                        <div class="inputBox">
+                            <label for="">Nombre:</label>
+                            <input type="text" placeholder="Nombre...">
+                        </div>
+                        <div class="inputBox">
+                            <label for="">Email:</label>
+                            <input type="email" placeholder="Email...">
+                        </div>
+                        <div class="inputBox">
+                            <label for="">Deja tu mensaje...</label>
+                            <textarea name="" cols="30" rows="5" placeholder="Mensaje..."></textarea>
+                        </div>
+                        <input type="submit" value="Enviar Mensaje">
+                    </form>
+                </div>
+                <div class="info">
+                    <div class="imgBox">
+                        <img src="./assets/images/new-messages.svg" alt="">
+                    </div>
+                    <div class="txtBox">
+                        <div class="infoContact">
+                            <ion-icon name="map"></ion-icon><p>Dirección, País</p>
+                        </div>
+                        <div class="infoContact">
+                            <ion-icon name="call"></ion-icon><p>000-00000000</p>
+                        </div>
+                        <div class="infoContact">
+                            <ion-icon name="mail"></ion-icon><p>contacto@email.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </header>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>   
+    </main>
+
+    
+    
 </body>
 </html>
