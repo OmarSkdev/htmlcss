@@ -13,7 +13,7 @@
     <header>
     <nav>
         <img src="./assets/images/logo2.png" alt="" width="78" height="82">
-        <ul class="menu-screen">
+        <ul class="menu-screen" id="menuList">
             <li><a href="./inicio.html" class="selected">Inicio</a></li>
             <li><a href="./about.html">Nosotros</a></li>
             <li><a href="./cursos.html">Cursos</a></li>
@@ -28,7 +28,7 @@
             </li>            
             <li><a href="./contacto.html">Contacto</a></li>
         </ul>
-        <img class="menu-mobile" src="./assets/images/menu_icon.png" width="36" height="21" alt="">
+        <img class="menu-mobile" src="./assets/images/menu_icon.png" onclick="toggleMenu()" width="36" height="21" alt="">
     </nav>
     <div class="header-content">
         <div class="header-content-text">
@@ -36,12 +36,15 @@
             <h1 class="header-title">HTML5 y CSS3</h1>
             <p class="header-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, repellendus earum ratione nobis illum perspiciatis mollitia voluptate tempora eligendi inventore ullam perferendis obcaecati.</p>
             <div class="header-content-btns">
-                <a href="#" class="btn">Leer Más</a>
-                <a href="#" class="btn">Únete</a>
+                <a href="./cursos.html" class="btn">Leer Más</a>
+                <a href="" class="btn" id="btnUnete">Únete</a>
             </div>
         </div>
-        <img class="header-img" src="./assets/images/pngegg.png" width="500" height="500" />
+        <img class="header-img" src="./assets/images/pngegg.png" onclick="toggleMenu()" width="500" height="500" />
     </div>
-    </header>   
+    </header>  
+    <script src="./js/onClick.js"></script> 
+    <script src="./js/menu.js"></script> 
+
 </body>
 </html>

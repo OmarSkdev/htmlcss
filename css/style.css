@@ -129,12 +129,16 @@ nav ul li:hover ul.dropdown{
 
 }
 
-.img-about{
-    display: block;
+.container img-about{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 520px;
+}
+
+.img-about{
+    display: flex;
+    justify-content: center;
 }
 
 .cards {  
@@ -207,7 +211,7 @@ details p {
 .testimony-container {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
-    gap: 1em;
+    /* gap: 1em; */
     align-items: center;
 }
 
@@ -655,10 +659,19 @@ details p {
     .contactForm{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+
+    .header-content-text{
+        padding: 20px;
+    }
+    .img-about{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /*--LAPTOPS Y TABLETS*/
 @media only screen and (max-width: 768px) {
+    
     .contactForm .info{
         height: 300px;
         padding: 20px;
@@ -772,16 +785,28 @@ details p {
     display: none;
 }
 
-@media(max-width: 600px){
+@media (max-width: 600px){
     .menu-mobile{
         display: flex;
     }
     .menu-screen {
-        display: none;
+        /* display: none; */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: v;
     }
+    
 }
 
+
+
 @media(max-width:1000px){
+    
+
     .header-content {
         flex-direction: column;
         align-items: center;
@@ -817,22 +842,45 @@ details p {
         height: 100%;
         min-width: 300px;
     }
+    .img-about {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        /* max-width: 400px;  */
+        
+
+    }
+
     .section {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 10px 20px;
 
     }
 
     .section details {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        
+    }
+    .testimony{
+        margin: 40px 15px;
+    }
+    .testimony-container{
+        justify-content: center;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .testimony-body {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
     }
+
+    
 
     .tarjeta-container {
         display: flex;
