@@ -541,6 +541,11 @@ details p {
     animation-delay: 1.25s;
 }
 
+#contacto{
+    background: -webkit-linear-gradient(90deg, #757575,#515da8,#607d88);
+    height: 100vmax;
+}
+
 .seccionForm{
     position: relative;
     width: 100%;
@@ -683,6 +688,45 @@ details p {
     color: var(--color-texto);
 }
 
+/*PANTALLAS LARGAS */
+@media only screen and (max-width: 1200px) {
+    .contactForm{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .header-content-text{
+        padding: 20px;
+    }
+    .img-about{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*--LAPTOPS Y TABLETS*/
+@media only screen and (max-width: 768px) {
+    
+    .contactForm .info{
+        height: 300px;
+        padding: 20px;
+    }
+
+    .contactForm .info .imgBox{
+        display: none;
+    }
+}
+
+/*CELULARES*/
+@media only screen and (max-width: 600px) {
+    .contactForm .containerForm{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .contactForm .info{
+        margin-bottom: 30px;
+    }
+}
+
 
 
 
@@ -750,7 +794,8 @@ details p {
         display: flex;
         flex-direction: column;
     }
-
+    
+    
     
 
 }
