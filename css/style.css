@@ -35,7 +35,7 @@ header {
     color: var(--color-texto);
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0 10px;
+    padding: 0 5px;
     transition: 0.4s; 
 }
 
@@ -70,11 +70,12 @@ header {
 /*INICIO*/
 #inicio{
     background-image: url('../assets/images/banner1.png');
-    background-position:center;
+    
     padding: 50px 50px;
     display: flex;
     justify-content: center;
     text-align: center;
+    min-height: 100vh;
     
 }
 
@@ -540,6 +541,57 @@ details p {
 .animation-text span:nth-child(6){
     animation-delay: 1.25s;
 }
+
+#tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center ;    
+    background: -webkit-linear-gradient(90deg, #757575,#515da8,#607d88); 
+    height: 100vh;
+}
+
+.mytabs{
+    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+.mytabs input[type="radio"]{
+    display: none;
+}
+
+.mytabs label{
+    padding: 25px;
+    background: var(--color-terciario);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.mytabs .container-tab{
+    width: 100%;
+    padding: 20px;
+    background: var(--color-texto) ;
+    order: 1;
+    display: none;
+}
+
+.mytabs .container-tab h2{
+    font-size: 24px;
+}
+
+.mytabs input[type='radio']:checked + label + .container-tab{
+    display: block;
+}
+
+.mytabs input[type='radio']:checked + label{
+    background: var(--color-texto);
+}
+
+
 
 #contacto{
     background: -webkit-linear-gradient(90deg, #757575,#515da8,#607d88);

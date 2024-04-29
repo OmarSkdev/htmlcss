@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tabs</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+
+        <nav class="menu">
+            <ul>
+                <a href="./inicio.html">Inicio</a>
+                <a href="./somos.html">Nosotros</a>
+                <a href="./cursos.html">Cursos</a>
+                <a href="./testimonios.html">Testimonios</a>
+                <a href="./preguntas.html">Preguntas</a>
+                <a href="./efecto_css.html" >Efecto Css</a>
+                <a href="./efecto2_css.html">Efecto2</a>   
+                <a href="./efecto3_css.html">Efecto3</a>
+                <a href="./efecto4_css.html" id="selected">Efecto4</a>    
+    
+            <a href="./contacto.html">Contacto</a>
+            </ul>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <main id="tabs">
+        <div class="mytabs">
+            <input type="radio" name="slider" id="html" checked>
+            <label for="html" class="html">HTML</label>                          
+            <div class="container-tab">                
+            <h2>HTML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vel aliquid delectus harum consectetur nemo quibusdam fuga quidem iusto asperiores!</p>                   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vel aliquid delectus harum consectetur nemo quibusdam fuga quidem iusto asperiores!</p>
+            </div>
+
+            <input type="radio" name="slider" id="css">
+            <label for="css" class="css">CSS</label>                          
+            <div class="container-tab">                
+            <h2>CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vel aliquid delectus harum consectetur nemo quibusdam fuga quidem iusto asperiores!</p>                   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vel aliquid delectus harum consectetur nemo quibusdam fuga quidem iusto asperiores!</p>
+
+            </div>
+
+            <input type="radio" name="slider" id="javascript">
+            <label for="javascript" class="html">JAVASCRIPT</label>                          
+            <div class="container-tab">                
+            <h2>JAVASCRIPT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vel aliquid delectus harum consectetur nemo quibusdam fuga quidem iusto asperiores!</p>                   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vel aliquid delectus harum consectetur nemo quibusdam fuga quidem iusto asperiores!</p>
+
+            </div>
+        </div>
+    </main>    
+</body>
+</html>
