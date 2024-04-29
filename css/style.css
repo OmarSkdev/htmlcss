@@ -543,7 +543,6 @@ details p {
 
 #contacto{
     background: -webkit-linear-gradient(90deg, #757575,#515da8,#607d88);
-    height: 100vmax;
 }
 
 .seccionForm{
@@ -687,7 +686,6 @@ details p {
 .contactForm .info .txtBox .infoContact p{
     color: var(--color-texto);
 }
-
 /*PANTALLAS LARGAS */
 @media only screen and (max-width: 1200px) {
     .contactForm{
@@ -726,7 +724,6 @@ details p {
         margin-bottom: 30px;
     }
 }
-
 
 
 
@@ -794,8 +791,7 @@ details p {
         display: flex;
         flex-direction: column;
     }
-    
-    
+
     
 
 }
