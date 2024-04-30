@@ -28,7 +28,7 @@ header {
 }
 .logo{
     text-transform: uppercase;
-    color: var(--color-primario);
+    color: var(--color-texto);
     font-weight: 400;
 }
 .menu a{
