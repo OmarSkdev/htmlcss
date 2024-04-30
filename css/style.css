@@ -821,6 +821,12 @@ details p {
         flex-direction: column;
      }
 
+    .section{
+        min-width: 60%;
+        margin-left: 10%;
+        
+    }
+
      .testimony{
         margin: 40px 15px;
     }
