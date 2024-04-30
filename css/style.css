@@ -827,6 +827,11 @@ details p {
         
     }
 
+    .questions-container{
+        min-width: 80%;
+        margin-left: 10%;
+    }
+
      .testimony{
         margin: 40px 15px;
     }
