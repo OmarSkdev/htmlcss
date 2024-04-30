@@ -144,21 +144,22 @@ header {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 60px;
+    
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
 
 .card {    
-    margin: 5px;
+    margin: 10px;
     padding: 30px;
     border: 1.5px solid var(--color-texto);
     border-radius: 5px;
-    max-width: 300px;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-secundario);
+    background-color: var(--color-texto);
 }
 
 .card:hover {
